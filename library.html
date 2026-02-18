@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Library</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+header{
+    background:#1f3c88;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#2948a0;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
+
+h2{
+    text-align:center;
+    margin-top:40px;
+}
+
+.themes, .books{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.theme-card, .book-card{
+    background:white;
+    width:220px;
+    padding:15px;
+    text-align:center;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.theme-card:hover{
+    background:#1f3c88;
+    color:white;
+}
+
+.book-card button{
+    margin-top:10px;
+    padding:8px;
+    background:#1f3c88;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+footer{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+
+@media(max-width:600px){
+    .themes, .books{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<h1>📚 Smart Library</h1>
+<p>Explore Free Books, Stories & News</p>
+</header>
+
+<!-- NAV -->
+<nav>
+<a href="#">Home</a>
+<a href="#fiction">Fiction</a>
+<a href="#academic">Academic</a>
+<a href="#programming">Programming</a>
+<a href="#stories">Stories</a>
+<a href="#news">News</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- THEMES -->
+<h2>📚 Book Categories</h2>
+<div class="themes">
+<a href="#fiction"><div class="theme-card">📖 Fiction</div></a>
+<a href="#academic"><div class="theme-card">📘 Academic</div></a>
+<a href="#programming"><div class="theme-card">💻 Programming</div></a>
+<a href="#stories"><div class="theme-card">📚 Stories</div></a>
+<a href="#news"><div class="theme-card">📰 Newspapers</div></a>
+</div>
+
+<!-- FICTION -->
+<h2 id="fiction">📖 Fiction Books</h2>
+<div class="books">
+<div class="book-card">
+<h3>Pride and Prejudice</h3>
+<a href="https://www.gutenberg.org/ebooks/1342" target="_blank">
+<button>Read</button>
+</a>
+</div>
+</div>
+
+<!-- ACADEMIC -->
+<h2 id="academic">📘 Academic Books</h2>
+<div class="books">
+<div class="book-card">
+<h3>Mathematics for MCA</h3>
+<a href="https://openlibrary.org/" target="_blank">
+<button>View</button>
+</a>
+</div>
+</div>
+
+<!-- PROGRAMMING -->
+<h2 id="programming">💻 Programming Books</h2>
+<div class="books">
+<div class="book-card">
+<h3>Python Programming</h3>
+<a href="https://docs.python.org/3/tutorial/" target="_blank">
+<button>View</button>
+</a>
+</div>
+</div>
+
+<!-- STORIES -->
+<h2 id="stories">📚 Featured Stories</h2>
+<div class="books">
+<div class="book-card">
+<h3>The Gift of the Magi</h3>
+<a href="https://www.gutenberg.org/ebooks/7256" target="_blank">
+<button>Read Story</button>
+</a>
+</div>
+
+<div class="book-card">
+<h3>The Tell-Tale Heart</h3>
+<a href="https://www.gutenberg.org/ebooks/2148" target="_blank">
+<button>Read Story</button>
+</a>
+</div>
+</div>
+
+<!-- NEWSPAPERS -->
+<h2 id="news">📰 Newspaper Collection</h2>
+<div class="books">
+<div class="book-card">
+<h3>BBC News</h3>
+<a href="https://www.bbc.com/news" target="_blank">
+<button>Visit</button>
+</a>
+</div>
+
+<div class="book-card">
+<h3>The Hindu</h3>
+<a href="https://www.thehindu.com/" target="_blank">
+<button>Visit</button>
+</a>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" style="text-align:center; padding:30px;">
+<h2>📩 Contact</h2>
+<p>Email: <a href="mailto:smartlibrary2026@gmail.com">smartlibrary2026@gmail.com</a></p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Smart Library | MCA Project
+</footer>
+
+</body>
+</html>
+
+
